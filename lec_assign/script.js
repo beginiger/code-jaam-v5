@@ -1,3 +1,4 @@
+// both lecture and assignment
 
 
 let lec1 = document.querySelector(".lec1");
