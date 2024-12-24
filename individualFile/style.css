@@ -90,7 +90,7 @@ body {
 
 
 .lecture:hover {
-    color: #ffd700; /* Highlight effect */
+    color: #ffd700; 
     cursor: pointer;
 }
 
