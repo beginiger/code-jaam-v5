@@ -77,3 +77,47 @@ document.addEventListener("click", function (e) {
 
 
 
+
+let assignments = document.querySelector(".lec2") ;
+if (assignments) {
+    assignments.addEventListener("click", function () {
+        if (flag) {
+            const contentDiv = document.querySelector(".hero");
+
+            if (contentDiv) {
+                // Insert PDFs inside div class pdf from backend:
+                const newHTML = `  
+                    <div class="filterParent container">
+                        <div class="filter">
+                            <p>Filter</p>
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+
+                    <div class="temp container">
+                        <div class="pdf">Pdf goes here</div> 
+                        <div class="options">
+                            <div class="tags">
+                                <i class="ri-bookmark-3-line"></i>
+                            </div>
+                            <div class="chat">
+                                <i class="ri-octagon-line"></i>
+                            </div>
+                            <div class="download">
+                                <i class="ri-arrow-down-fill"></i>
+                            </div>
+                        </div>
+                    </div>`;
+
+                // Adding the HTML at the end of the div.hero
+                contentDiv.insertAdjacentHTML("beforeend", newHTML);
+
+                assignments.classList.add("active");
+
+                flag = false;
+            } else {
+                console.error("Element with class '.hero' not found.");
+            }
+        }
+    });
+}
