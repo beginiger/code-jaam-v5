@@ -64,6 +64,47 @@ body {
 
 }
 
+.filterParent{
+    
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+}
+
+.filter{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    height: 20px;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+    background-color: #ffd700;
+    width: 18%;
+    border-radius: 10px;
+}
+
+.filterDropdown{
+    margin: 10px 0px;
+    border-radius: 10px;
+
+    width: 40%;
+    padding: 0px 13px;
+    background-color: #ccc;
+    height: 100px;
+    overflow: auto;
+    font-size: small;
+    color: black;
+}
+
+.filterDropdown p{
+    transition: all 0.5s ease;
+}
+
+.filterDropdown p:hover{
+    transform: scale(1.06);
+}
+
 .featureList {
     display: flex;
     justify-content: space-between;
