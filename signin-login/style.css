@@ -4,14 +4,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+
     font-family: 'Jost', sans-serif;
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 
 .main {
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     overflow: hidden;
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
     border-radius: 10px;
@@ -109,10 +109,10 @@ button:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .main {
-        width: 260px;
-        height: 400px;
+        width: 400px;
+        height: 600px;
     }
 
     h1 {
@@ -132,7 +132,7 @@ button:hover {
     .login {
         height: 380px;
     }
-}
+} 
 
 /* #chk:checked ~ .login{
 	transform: translateY(-500px);
